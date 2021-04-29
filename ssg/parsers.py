@@ -45,7 +45,7 @@ class ResourceParser(Parser):
 class MarkdownParser(Parser):
     """that is a sub-class of Parser that parse Markdown"""
 
-    extensions = ['.md', 'markdown']
+    extensions = ['.md', '.markdown']
 
     def parse(self, path, source, dest):
         content = Content.load(self.read(path))
